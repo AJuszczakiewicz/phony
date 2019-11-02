@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Kitty",
+    "surname": "On Coke",
+    "numbers":[
+      {
+        "phone_number":  "944265465",
+        "phone_type":  "home"
+      }, {
+        "phone_number":  "944265465",
+        "phone_type":  "home"
+      }
+    ]
+  }, {
+    "name": "Jan",
+    "surname": "Sleeping on the Couch",
+    "numbers":[
+      {
+        "phone_number":  "944265465",
+        "phone_type":  "home"
+      }, {
+        "phone_number":  "944265465",
+        "phone_type":  "home"
+      }
+    ]
+  },
+  {
+    "name": "Kitty",
+    "surname": "On Coke",
+    "numbers":[
+      {
+        "phone_number":  "944265465",
+        "phone_type":  "home"
+      }, {
+        "phone_number":  "944265465",
+        "phone_type":  "home"
+      }
+    ]
+  }
+]
