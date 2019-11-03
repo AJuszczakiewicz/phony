@@ -1,3 +1,4 @@
+from contact import Contact
 
 class Phonebook:
     def __init__(self):
@@ -6,6 +7,11 @@ class Phonebook:
     def add_contact(self, record):
         self.contact_list.append(record)
 
+    def add_new_contact(self, name, surname, phone_number, phone_type):
+        contact = Contact(name, surname)
+        contact.add_new_number(phone_number, phone_type)
+        self.add_contact(contact)
+
     def get_contact_by_contact_id(self, contact_id):
         for contact in self.contact_list:
             if contact.id == contact_id:
@@ -13,7 +19,7 @@ class Phonebook:
 
     def delete_contact_by_contact_id(self, contact_id):
         contact = self.get_contact_by_contact_id(contact_id)
-        del contact
+        self.contact_list.remove(contact)
 
     def add_number_to_existing_contact(self, contact_id, phone_number, phone_type):
         contact = self.get_contact_by_contact_id(contact_id)
@@ -25,5 +31,5 @@ class Phonebook:
     def __str__(self):
         repr_str = ""
         for contact in self.contact_list:
-            repr_str = repr_str + str(contact) + "\n"
+            repr_str = repr_str + str(contact) + "\n\n"
         return repr_str
