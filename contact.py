@@ -10,12 +10,12 @@ class Contact:
         self.id = Contact.id_count
         Contact.id_count += 1
 
-    def add_new_number(self, number, type):
-        phone_number = PhoneNumber(number, type)
+    def add_new_number(self, phone_number, phone_type):
+        phone_number = PhoneNumber(phone_number, phone_type)
         self.numbers.append(phone_number)
 
     def __str__(self):
-        str_rep = f'name: {self.name}\nsurname: {self.surname}'
+        str_rep = f'ID: {self.id}\nname: {self.name}\nsurname: {self.surname}'
         for number in self.numbers:
             str_rep += f'\n{number}'
         return str_rep
