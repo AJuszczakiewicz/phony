@@ -1,10 +1,14 @@
 from phoneNumber import PhoneNumber
 
 class Contact:
+    id_count = 1
+
     def __init__(self, name, surname):
         self.name = name
         self.surname = surname
         self.numbers = []
+        self.id = Contact.id_count
+        Contact.id_count += 1
 
     def add_new_number(self, number, type):
         phone_number = PhoneNumber(number, type)
