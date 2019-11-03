@@ -1,12 +1,14 @@
-from jsonReader import JsonReader
-from phoneNumber import PhoneNumber
-from contact import Contact
-from phonebook import Phonebook
+import json
+from phonebook_factory import PhonebookFactory
+
+def read_file(file_name):
+    with open(file_name, "r") as read_file:
+        data = json.load(read_file)
+    return data
 
 def main():
-    phonebook = JsonReader().load_data()
-    phonebook.delete_contact_by_contact_id(2)
-    print(phonebook)
+    json_data = read_file("phonebook.json")
+    phonebook = PhonebookFactory(json_data).build()
 
 if __name__ == "__main__":
     main()
