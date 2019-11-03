@@ -5,7 +5,7 @@
     "numbers":[
       {
         "phone_number":  "944265465",
-        "phone_type":  "home"
+        "phone_type":  "fax"
       }, {
         "phone_number":  "944265465",
         "phone_type":  "home"
@@ -17,9 +17,9 @@
     "numbers":[
       {
         "phone_number":  "944265465",
-        "phone_type":  "home"
+        "phone_type":  "mobile"
       }, {
-        "phone_number":  "944265465",
+        "phone_number":  "2343653576",
         "phone_type":  "home"
       }
     ]
@@ -29,9 +29,6 @@
     "surname": "On Coke",
     "numbers":[
       {
-        "phone_number":  "944265465",
-        "phone_type":  "home"
-      }, {
         "phone_number":  "944265465",
         "phone_type":  "home"
       }
