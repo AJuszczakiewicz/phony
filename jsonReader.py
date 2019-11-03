@@ -16,4 +16,4 @@ class JsonReader:
         phonebook = Phonebook()
         for record in self.json_data:
             contact = Contact(record['name'], record['surname'])
-            phonebook.add_record(contact)
+            phonebook.add_contact(contact)
