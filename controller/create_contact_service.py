@@ -1,4 +1,4 @@
-from contact import Contact
+from model.contact import Contact
 
 class CreateContactService:
     def __init__(self, name, surname, phone_number, phone_type, phonebook):

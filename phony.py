@@ -1,5 +1,7 @@
 import json
-from phonebook_factory import PhonebookFactory
+
+from lib.phonebook_factory import PhonebookFactory
+
 
 def read_file(file_name):
     with open(file_name, "r") as read_file:

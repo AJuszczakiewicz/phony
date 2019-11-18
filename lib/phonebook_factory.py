@@ -1,5 +1,6 @@
-from phonebook import Phonebook
-from contact import Contact
+from model.contact import Contact
+from model.phonebook import Phonebook
+
 
 class PhonebookFactory:
     def __init__(self, json_data):

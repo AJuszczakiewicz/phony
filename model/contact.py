@@ -1,4 +1,4 @@
-from phone_number import PhoneNumber
+from model.phone_number import PhoneNumber
 
 class Contact:
     id_count = 1

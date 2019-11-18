@@ -1,5 +1,3 @@
-from contact import Contact
-
 class Phonebook:
     def __init__(self):
         self.contact_list = []
