@@ -12,9 +12,3 @@ class Phonebook:
 
     def __repr__(self):
         return self.contact_list
-
-    def __str__(self):
-        repr_str = ""
-        for contact in self.contact_list:
-            repr_str = repr_str + str(contact) + "\n\n"
-        return repr_str

@@ -4,4 +4,4 @@ class PhoneNumber:
         self.phone_type = phone_type
 
     def __str__(self):
-        return f'\tphone number: {self.phone_number}\n\ttype: {self.phone_type}'
+        return f'\t\tphone number: {self.phone_number}\n\t\ttype: {self.phone_type}'

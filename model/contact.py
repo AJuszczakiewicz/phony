@@ -15,8 +15,8 @@ class Contact:
         self.numbers.append(phone_number)
 
     def __str__(self):
-        str_rep = f'ID: {self.id}\nname: {self.name}\nsurname: {self.surname}'
+        str_rep = f'\tID: {self.id}\n\tname: {self.name}\n\tsurname: {self.surname}'
         for number in self.numbers:
-            str_rep += f'\n{number}'
+            str_rep += f'\t\t\n{number}'
         return str_rep
 
