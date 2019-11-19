@@ -5,6 +5,7 @@ from examples import custom_style_3
 
 from controller.create_contact_service import CreateContactService
 from controller.delete_contact_service import DeleteContactService
+from lib.phonebook_serializer import PhonebookSerializer
 from view.ascii_graphics import MENU_TITLE
 from view.ui_questions import add_contact_menu, delete_contact_menu, main_menu
 
@@ -31,6 +32,8 @@ class UI:
                 self.delete_contact_menu()
             elif self.answers["main_menu"] == "Add a new contact":
                 self.add_new_contact()
+            elif self.answers["main_menu"] == "Save to file":
+                PhonebookSerializer(self.phonebook).run()
 
     def print_contacts(self):
         repr_str = """
